@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+ h1,h2,h3,h4,h5,h6{
+   font-family: 'Montserrat', sans-serif;
+ }
+ .container{
+  width: 1170px;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+
+/* UNIVERSAL CSS ENDS */
+
+
+/* CSS FOR HEADER SECTION */
+
+.logo {
+    width: 140px;
+    float: left;
+    margin-top: 10px;
+}
+
+.menu {
+    width: 1000px;
+    float: right;
+}
+
+ul.main_menu {
+    list-style: none;
+    float: right;
+    position: relative;
+}
+
+ul.main_menu li {
+    float: left;
+    position: relative;
+}
+
+ul.main_menu li a {
+    text-decoration: none;
+    padding: 40px 15px;
+    display: block;
+    font-weight: 600;
+    color: #333;
+    transition: .5s;
+    width: 100px;
+    text-align: center;
+}
+.navigation {
+    display: table;
+}
+
+ul.main_menu li::before {content: '';position: absolute;width: 5px;left: 50%;height: 2px;background: black;bottom: 20px;transition: .5s;transform: translateX(-50%);}
+
+ul.main_menu li a::before {content: '';position: absolute;width: 5px;left: 50%;height: 2px;background: black;bottom: 20px;transition: .5s;transform: translateX(-50%);}
+
+ul.main_menu li a::after {content: '';position: absolute;width: 5px;height: 2px;right: 50%;background: black;bottom: 20px;transition: .5s;transform: translateX(-50%);}
+
+ul.main_menu li a:hover::before{left: 0%}
+ul.main_menu li a:hover::after{right: 0%}
+
+
+header#mainHeader {
+    border-bottom: 2px solid #e80566;
+    background: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+/* dropDown CSS */
+
+ul.dropDown {
+    width: 250px;
+    background: #e80566;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 101px;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: .3s;
+}
+
+ul.dropDown2 {
+    list-style: none;
+    background: #ff5100;
+    position: absolute;
+    left: 250px;
+    width: 250px;
+    top: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: .3s;
+
+}
+
+
+
+ul li:hover .dropDown  {
+    opacity: 1;
+    transform: scaleY(1);
+}
+.dropDown  li:hover ul.dropDown2{
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+ul.dropDown li {
+    float: none;
+}
+
+ul.dropDown li::before {content: '';background: none;width: 0;}
+
+ul.dropDown li a::before {
+    content: '';
+    background: none;
+    width: 0;
+}
+
+ul.dropDown li a::after {
+    content: '';
+    background: none;
+    width: 0;
+}
+
+ul.dropDown li a {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    width: initial;
+    padding: 15px;
+}
+ul.dropDown li a:hover{
+padding-left:40px;background:#000723}
+/* css for about section */
+
+
+.aboutImg {
+    width: 550px;
+    float: left;
+}
+
+.aboutDesc {
+    width: 550px;
+    float: right;
+}
+
+.aboutUs {
+    overflow: hidden;
+}
+
+section#about {
+    padding: 70px 0px;
+}
+
+.aboutTitle h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.aboutTitle p {
+    color: #555;
+    line-height: 25px;
+    width: 472px;
+    font-size: 15px;
+}
+.tabDesc p {
+    color: #555;
+    line-height: 25px;
+    width: 472px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.tabDesc {
+    color: #555;
+    margin-top: 20px;
+}
+.aboutUsSingleTab ul {
+    list-style: none;
+}
+
+.aboutUsSingleTab ul li {
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+    color: #2e3c8e;
+}
+
+.aboutUsSingleTab {
+    overflow: hidden;
+    margin-top: 25px;
+}
+.tabDesc ul {
+    list-style: none;
+}
+
+.tabDesc ul li {
+    line-height: 30px;
+}
+
+.tabDesc ul li i {
+    color: #e80566;
+    margin-right: 3px;
+}
+/* css for Services section */
+
+.sectionTitle h1{
+margin-bottom: 15px;
+font-size: 35px;
+}
+#services{
+  background: #f6f6f6;
+  padding: 70px 0px;
+}
+.sectionTitle  span {
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+}
+
+.sectionTitle {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.sbTitle h3{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.singleBox {
+    width: 328px;
+    text-align: center;
+    padding: 30px;
+    float: left;
+}
+
+.sbIcon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #E80566
+}
+
+.sbDesc {
+    font-size: 15px;
+    color: #666;
+}
+.serviceBoxes {
+    overflow: hidden;
+    margin-top: 50px;
+}
+.aboutUsSingleTab ul li:first-child {
+    color: #e80566;
+    border-bottom: 2px solid #e80566;
+}
+
+
+/* CSS For TESTIMONIALS STARTS */
+
+.clientImg {
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+section#testimonial {
+    background: #ff5100;
+    padding: 50px 0;
+    position: relative;
+}
+
+.section_title {
+    text-align: center;
+}
+
+.section_title h2 {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+
+
+
+.client_text {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    color: white;
+    line-height: 25px;
+}
+
+.client_name {
+    text-align: right;
+    width: 700px;
+    margin: auto;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* css for testimonial's before & after STARTS */
+
+section#testimonial::before {content: '';background: #ff5100;width: 100%;height: 150px;position: absolute;top: -40px;transform: skewY(2deg);}
+
+section#testimonial::after {
+    content: '';
+    background: #ff5100;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: -50px;
+    transform: skewY(2deg);
+}
+
+section#testimonial .container {
+    z-index: 9;
+    position: relative;
+}
+
+/* CSS For our GOAL STARTS */
+
+
+section#our_goal {
+    background: -webkit-linear-gradient(#0000006b,#ff51004d),url(ourgoalsection.jpg);
+    color: white;
+    height: 700px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* CSS FOR FOOTER STARTS */
+
+footer {
+    background: #002b40;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+ /* CSS FOR Latest News section STARTS */
+
+
+ section#lates_news {
+     padding: 70px 0;
+ }
+
+ .section_title h2 {
+     text-align: center;
+     color: black;
+ }
+
+
+
+ .single_post {
+     width: 330px;
+     overflow: hidden;
+     box-shadow: 3px 4px 5px 1px #0000006b;
+     transition: .7s;
+ }
+
+ .post_title {
+     padding: 10px;
+ }
+
+ .post_desc {
+     padding: 0 10px;
+     color: #777;
+     line-height: 25px;
+ }
+
+ .read_more a {
+     background: linear-gradient(#4500ad, #e80566);
+     border-radius: 5px;
+     margin: 10px;
+     color: white;
+     width: 100px;
+     text-align: center;
+     font-weight: bold;
+     font-style: italic;
+     padding: 10px;
+     text-decoration: none;
+     float: right;
+     font-size: 15px;
+     display: block;
+ }
+
+ .read_more a:hover {
+     background: linear-gradient(#e80566, #4500ad);
+ }
+
+.post_title a {
+    color: #e80566;
+    text-decoration: none;
+}
+.posts_grid {
+    display: flex;
+    justify-content: space-between;
+}
+/* CSS FOR overly */
+
+.post-thumbnail {
+    position: relative;
+}
+
+.overly {
+    position: absolute;
+    top: 0;
+    background: #ff51003b;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    display: grid;
+    font-size: 50px;
+    color: black;
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.overly i {
+    border: 3px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    outline: none;
+    color: black;
+}
+.post-thumbnail:hover .overly {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.overly i:hover {border: 3px solid black;color: white;}
+
+.single_post:hover {
+    transform: translateY(-30px);
+}
+
+.active_hover{
+  transform: translateY(-30px);
+
+}
+.active_hover:hover{
+  transform: translateY(-30px);
+
+}
+
+
+/* CSS for copyRight */
+
+.copyRight {
+    background: #02405f;
+    padding: 30px 0;
+}

@@ -1,0 +1,166 @@
+
+@media only screen and (min-width:200px) and (max-width:768px) {
+
+  *{
+    box-sizing: border-box;
+  }
+
+
+  header#mainHeader {
+      display: none;
+  }
+
+  .container {
+      width: 100%;
+  }
+
+  .aboutImg {
+      width: 100%;
+  }
+
+  .aboutDesc {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .sectionTitle {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .singleBox {
+      width: 100%;
+  }
+  section#our_goal {
+      font-size: 23px;
+      height: 400px;
+  }
+
+  .single_post {
+      width: 100%;
+      margin-bottom: 45px;
+  }
+
+  .posts_grid {
+      display: block;
+      padding: 15px;
+  }
+
+  .single_post.active_hover {
+    transform: translateY(0px);
+}
+
+.single_post.active_hover:hover {
+    transform: translateY(-30px);
+}
+.client_text {
+    width: 100%;
+    padding: 15px;
+}
+
+.client_name {
+    width: 100%;
+    padding: 15px;
+    padding-right: 30px;
+}
+.read_more a {
+    width: 115px;
+}
+
+}
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+  header#mainHeader {
+    display: none;
+}
+  .container {
+      width: 769px;
+  }
+
+  .aboutImg {
+      width: 330px;
+      padding-left: 10px;
+  }
+
+  .aboutDesc {
+      width: 400px;
+      margin-right: 10px;
+  }
+
+  .aboutTitle p {
+      width: 389px;
+  }
+
+
+
+  .tabDesc p {
+      width: 389px;
+  }
+
+  header#mainHeader {
+      display: none;
+  }
+
+  .singleBox {
+      width: 324px;
+  }
+
+
+
+  .quote_title h2 {
+      font-size: 35px;
+      padding: 0 20px;
+  }
+
+  .single_post {
+      width: 234px;
+  }
+
+  .posts_grid {
+      justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width:990px) and (max-width:999px){
+  header#mainHeader {
+    display: none;
+}
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1170px){
+  .container {
+      width: 993px;
+  }
+
+  .aboutImg {
+      width: 450px;
+  }
+
+  .aboutDesc {
+      width: 500px;
+  }
+
+  .singleBox {
+      width: 265px;
+  }
+
+  .serviceBoxes {
+  }
+
+  section#services {
+      padding-bottom: 150px;
+  }
+
+  .quote_title h2 {
+      font-size: 40px;
+      padding: 0 50px;
+  }
+
+  .single_post {
+      width: 304px;
+  }
+  .posts_grid {
+    justify-content: space-evenly;
+}
+}
